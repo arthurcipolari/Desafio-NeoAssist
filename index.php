@@ -66,7 +66,7 @@
                     foreach ($palavrasChave as $palavrasChave2) {
                       $buscaAssunto = strpos(strtolower($message["Subject"]),$palavrasChave2);
                       $buscaTitulo = strpos(strtolower($message["Message"]),$palavrasChave2);
-                      $usdhaushdsau = $palavrasChave2;
+                      //Se a funçao strpos retornar qualquer coisa diferente de falso ela encontrou alguma palavra
                       if($buscaAssunto !== false)
                         $pontuacao++;
                       if($buscaTitulo !== false)
